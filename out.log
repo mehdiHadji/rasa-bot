@@ -1,0 +1,194 @@
+2019-10-04 13:16:19,169 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-10-04 13:16:43,189 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/health'
+Traceback (most recent call last):
+  File "c:\users\user\anaconda3\lib\site-packages\sanic\app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "c:\users\user\anaconda3\lib\site-packages\sanic\router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\user\anaconda3\lib\site-packages\sanic\router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /health not found
+2019-10-04 13:16:43,191 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "c:\users\user\anaconda3\lib\site-packages\sanic\app.py", line 958, in handle_request
+    request, response
+  File "c:\users\user\anaconda3\lib\site-packages\spf\framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-04 13:17:17,723 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/health'
+Traceback (most recent call last):
+  File "c:\users\user\anaconda3\lib\site-packages\sanic\app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "c:\users\user\anaconda3\lib\site-packages\sanic\router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\user\anaconda3\lib\site-packages\sanic\router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /health not found
+2019-10-04 13:19:08,927 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "c:\users\user\anaconda3\lib\site-packages\sanic\app.py", line 958, in handle_request
+    request, response
+  File "c:\users\user\anaconda3\lib\site-packages\spf\framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-04 13:19:08,933 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/health'
+Traceback (most recent call last):
+  File "c:\users\user\anaconda3\lib\site-packages\sanic\app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "c:\users\user\anaconda3\lib\site-packages\sanic\router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\user\anaconda3\lib\site-packages\sanic\router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /health not found
+2019-10-04 13:19:08,935 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "c:\users\user\anaconda3\lib\site-packages\sanic\app.py", line 958, in handle_request
+    request, response
+  File "c:\users\user\anaconda3\lib\site-packages\spf\framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-04 13:19:08,938 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/health'
+Traceback (most recent call last):
+  File "c:\users\user\anaconda3\lib\site-packages\sanic\app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "c:\users\user\anaconda3\lib\site-packages\sanic\router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\user\anaconda3\lib\site-packages\sanic\router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /health not found
+2019-10-04 13:19:08,947 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "c:\users\user\anaconda3\lib\site-packages\sanic\app.py", line 958, in handle_request
+    request, response
+  File "c:\users\user\anaconda3\lib\site-packages\spf\framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-04 13:19:08,950 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "c:\users\user\anaconda3\lib\site-packages\sanic\app.py", line 958, in handle_request
+    request, response
+  File "c:\users\user\anaconda3\lib\site-packages\spf\framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-04 13:19:08,971 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "c:\users\user\anaconda3\lib\site-packages\sanic\app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "c:\users\user\anaconda3\lib\site-packages\sanic\router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\user\anaconda3\lib\site-packages\sanic\router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-10-04 13:19:08,972 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "c:\users\user\anaconda3\lib\site-packages\sanic\app.py", line 958, in handle_request
+    request, response
+  File "c:\users\user\anaconda3\lib\site-packages\spf\framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable
+2019-10-04 13:28:13,094 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-10-04 13:29:08,806 [ERROR]  Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "c:\users\user\anaconda3\lib\site-packages\sanic\app.py", line 958, in handle_request
+    request, response
+  File "c:\users\user\anaconda3\lib\site-packages\spf\framework.py", line 579, in _run_response_middleware
+    _response = await _response
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\extension.py", line 267, in unapplied_cors_response_middleware
+    set_cors_headers(req, resp, context, res_options)
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 254, in set_cors_headers
+    headers_to_set = get_cors_headers(options, req.headers, req.method)
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 174, in get_cors_headers
+    origins_to_set = get_cors_origins(options, request_headers.get('Origin'))
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 149, in get_cors_origins
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 149, in <listcomp>
+    return sorted([o for o in origins if not probably_regex(o)])
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 273, in probably_regex
+    return any((c in maybe_regex for c in common_regex_chars))
+  File "c:\users\user\anaconda3\lib\site-packages\sanic_cors\core.py", line 273, in <genexpr>
+    return any((c in maybe_regex for c in common_regex_chars))
+TypeError: argument of type 'NoneType' is not iterable

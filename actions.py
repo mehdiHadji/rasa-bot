@@ -1,27 +1,22 @@
-# This files contains your custom actions which can be used to run
-# custom Python code.
-#
-# See this guide on how to implement these action:
-# https://rasa.com/docs/rasa/core/actions/#custom-actions/
+from typing import Any, Text, Dict, List
+from rasa_sdk import Action, Tracker
+from rasa_sdk.executor import CollectingDispatcher
+import logging
+import requests
+import json
 
+API_URL = "http://xhub.ddns.net:8383/certifs"
 
-# This is a simple example for a custom action which utters "Hello World!"
+class ActionHelloWorld(Action):
+    def name(self) -> Text:
+        return "action_demand_certif"
 
-# from typing import Any, Text, Dict, List
-#
-# from rasa_sdk import Action, Tracker
-# from rasa_sdk.executor import CollectingDispatcher
-#
-#
-# class ActionHelloWorld(Action):
-#
-#     def name(self) -> Text:
-#         return "action_hello_world"
-#
-#     def run(self, dispatcher: CollectingDispatcher,
-#             tracker: Tracker,
-#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-#
-#         dispatcher.utter_message("Hello World!")
-#
-#         return []
+    def run(self, dispatcher,tracker,domain):
+        res = requests.get(API_URL)
+        if res.status_code == 200:
+            data = res.json()
+            certif = data['data'][0]
+            owner = data['data'][1]
+            out_message = "Here some quick info:\nThe certificate : {} was recently demanded by : {}".format(certif,owner)
+            dispatcher.utter_message(out_message)
+        return []
