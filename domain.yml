@@ -15,6 +15,7 @@ actions:
 - utter_default
 - utter_gratitude
 - utter_ask_again
+- utter_unclear
 
 templates:
   utter_greet:
@@ -33,3 +34,6 @@ templates:
   utter_ask_again:
   - text: "Okay! Let's start again, please tell me what do you need?"
   - text: "No issues! Let's try this again.\n Please repeat your query?"
+  utter_unclear:
+  - text: sorry can you repeat your query
+  - text: I am not sure what you are aiming for
