@@ -1,0 +1,47 @@
+#Expense Report
+{
+	period:"mm/dd/yyyy",
+	purpose: "",
+	details:["tag1","tag2","tag3",...,"tagn"]
+}
+__________________________________________________
+#Leave Authorization
+{
+	departure date: 
+		{
+			date: "mm/dd/yyyy",
+			half day: "yes/no"
+		}
+	end date:
+		{
+			date: "mm/dd/yyyy",
+			half day: "yes/no"
+		}
+	langue: "FR/EN"
+}
+__________________________________________________
+#Mission order
+{
+	endroit: "",
+	transport: "",
+	mission: "",
+	langue: "FR/EN"
+}
+__________________________________________________
+#Pay statement
+{
+	date debut: "mm/dd/yyyy",
+	number: ""
+}
+__________________________________________________
+#Salary certificate
+{
+	langue: "FR/EN",
+	number: ""
+}
+__________________________________________________
+#work certificate
+{
+	langue: "FR/EN",
+	number: ""
+}
